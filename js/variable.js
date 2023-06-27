@@ -21,3 +21,13 @@ console.log(amount, price, discount)
 console.log("Avg:" + average)
 console.log("Spped:" + speed)
 console.log("isActive:" + isActive)
+
+// 定数（constant）
+const TAX_RATE = 0.1
+// 定数は再代入（さいだいにゅう）できない
+// TAX_RATE = 0.08
+
+const TOKYO = "東京"
+
+console.log(TAX_RATE)
+console.log(TOKYO)

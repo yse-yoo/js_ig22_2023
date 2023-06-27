@@ -11,3 +11,15 @@ const hello = function(name) {
     var message = name + "さん、ようこそ！";
     return message;
 }
+
+var message = hello("YSE");
+console.log(message)
+
+// arrow function（アロー関数）
+const hello2 = (name) => {
+    var message = name + "さん、ようこそ！";
+    return message;
+}
+
+message = hello2("YSE");
+console.log(message)

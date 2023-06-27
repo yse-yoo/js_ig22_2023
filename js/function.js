@@ -1,0 +1,4 @@
+
+function calculateTotalPrice(price, amount) {
+    
+}

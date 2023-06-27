@@ -23,3 +23,14 @@ const hello2 = (name) => {
 
 message = hello2("YSE");
 console.log(message)
+
+// HTMLの読み込みが完了（かんりょう）したら、実行（じっこう）
+window.onload = function() {
+    console.log("東京")
+    var message = hello2("Test1");
+    console.log(message)
+}
+console.log("横浜")
+
+message = hello2("Test2");
+console.log(message)

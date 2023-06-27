@@ -8,8 +8,16 @@ var discount = -100
 
 var average = 0.333
 var speed = 45.5
-speed = 55.3
 
 // boolean
 var isActive = true
+
+// monster = "キメラ"
+speed = 55.3
 isActive = false
+
+console.log(monster)
+console.log(amount, price, discount)
+console.log("Avg:" + average)
+console.log("Spped:" + speed)
+console.log("isActive:" + isActive)

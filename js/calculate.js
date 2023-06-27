@@ -37,7 +37,30 @@ console.log(hp)
 
 // 文字と連結（れんけつ）
 hp = 10
-monster_name = "スライム"
 
+var monster_name = "スライム"
 var message = monster_name + "があらわれた！"
 console.log(message)
+
+message = monster_name + "のHPは" + hp
+console.log(message)
+
+// 論理演算（logical operation）
+console.log("--- logical operation ---")
+var isBool;
+
+hp = 10;
+isBool = (hp == 20)
+console.log(isBool)
+
+hp = 0;
+isBool = (hp < 0)
+console.log(isBool)
+
+hp = 0;
+isBool = (hp >= 0)
+console.log(isBool)
+
+hp = 15;
+isBool = (hp >= 10)
+console.log(isBool)

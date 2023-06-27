@@ -64,3 +64,10 @@ console.log(isBool)
 hp = 15;
 isBool = (hp >= 10)
 console.log(isBool)
+
+// ３項演算(ternary operation)
+console.log("--- ternary operation ---")
+hp = 10
+var result = (hp <= 20) ? "ピンチ！" : "だいじょうぶ";
+console.log("HP:" + hp)
+console.log(result)

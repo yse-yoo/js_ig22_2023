@@ -12,3 +12,11 @@ messageElement.innerHTML = "<p>Welcome!!</p>"
 var titleElement = document.getElementById("title")
 titleElement.innerHTML = "サイコロ"
 
+function randomNumber(min, max) {
+    //random(): 0 - 1 の Number
+    var number = Math.floor(Math.random() * (max + 1 - min)) + min
+    return number
+}
+
+var number = randomNumber(1, 6)
+console.log(number)

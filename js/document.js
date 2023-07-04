@@ -18,3 +18,7 @@ outputP("スポーツ")
 
 // Windowのタイトル
 document.title = "My Profile"
+
+// bodyプロパティ
+document.body.style.background = "#fffaf0"
+document.body.style.color = "#808080"

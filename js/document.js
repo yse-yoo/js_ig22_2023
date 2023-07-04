@@ -28,7 +28,11 @@ document.body.style.color = "#808080"
 const imagePath = "images/me.png"
 //<img src="xxxx">
 var tag = '<img src="' + imagePath + '">'
-//リテラル式：バッククォート「 ` 」 
+//リテラル式： back quote「 ` 」 
 //変数（へんすう）は、${} でかこむ
 tag = `<img src="${imagePath}">`
 document.write(tag)
+
+// single quote: '
+// dobule quote: "
+// back quote: `

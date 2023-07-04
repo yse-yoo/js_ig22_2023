@@ -7,3 +7,8 @@ console.log(price)
 var messageElement = document.getElementById("message")
 // messageElement.innerText = "<p>Welcome!!</p>"
 messageElement.innerHTML = "<p>Welcome!!</p>"
+
+// id = title の Elementを取得（しゅとく）
+var titleElement = document.getElementById("title")
+titleElement.innerHTML = "サイコロ"
+

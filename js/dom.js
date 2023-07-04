@@ -20,3 +20,4 @@ function randomNumber(min, max) {
 
 var number = randomNumber(1, 6)
 console.log(number)
+document.getElementById("result").innerHTML = number

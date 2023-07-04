@@ -15,7 +15,19 @@
 
         <h2>User Name</h2>
         <input id="user_name" class="form-control" type="text" onchange="inputUserName()">
-        <p id="message"><!-- inner --></p>
+        <p id="message" class="p-3"><!-- inner --></p>
+
+        <h2>Item List</h2>
+        <dl>
+            <dt>Name</dt>
+            <dd>Coffee</dd>
+            <dt>Price</dt>
+            <dd>350</dd>
+            <dt>Quantity</dt>
+            <dd class="w-25">
+                <input class="form-control" type="number" min="0" max="10">
+            </dd>
+        </dl>
 
         <script src="js/event.js"></script>
     </div>

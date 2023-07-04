@@ -15,3 +15,6 @@ document.write("<h2>Favorite</h2>")
 outputP("旅行")
 outputP("ゲーム")
 outputP("スポーツ")
+
+// Windowのタイトル
+document.title = "My Profile"

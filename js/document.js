@@ -8,6 +8,7 @@ const outputP = function(message) {
 }
 
 document.write("<h1>Profile</h1>")
+
 document.write("<h2>Name</h2>")
 document.write("<p>YSE</p>")
 document.write("<h2>Favorite</h2>")
@@ -22,3 +23,12 @@ document.title = "My Profile"
 // bodyプロパティ
 document.body.style.background = "#fffaf0"
 document.body.style.color = "#808080"
+
+// image
+const imagePath = "images/me.png"
+//<img src="xxxx">
+var tag = '<img src="' + imagePath + '">'
+//リテラル式：バッククォート「 ` 」 
+//変数（へんすう）は、${} でかこむ
+tag = `<img src="${imagePath}">`
+document.write(tag)

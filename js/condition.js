@@ -11,6 +11,18 @@ if (price <= 0) {
 }
 console.log(message)
 
+// Date
+var date = new Date()
+var year = date.getFullYear()
+var month = date.getMonth() + 1
+var day = date.getDate()
+var hours = date.getHours()
+var minutes = date.getMinutes()
+var seconds = date.getSeconds()
+
+var dateString = year + "/" + month + "/" + day
+document.getElementById("today").innerHTML = dateString
+
 var weekday = "月"
 var garbade = ""
 

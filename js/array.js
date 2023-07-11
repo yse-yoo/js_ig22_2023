@@ -10,3 +10,7 @@ console.log(count)
 console.log("--- push() ---")
 drinks.push("オレンジジュース")
 console.log(drinks)
+
+console.log("--- pop() ---")
+drinks.pop()
+console.log(drinks)

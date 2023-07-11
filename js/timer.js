@@ -8,9 +8,19 @@ counterElement.innerText = count
 
 function start() {
     console.log("Start!!!")
-
+    clearInterval(timer)
     timer = setInterval(() => {
-        count++    
+        count++
         counterElement.innerHTML = count
     }, interval);
+}
+
+function stop() {
+    clearInterval(timer)
+}
+
+function reset() {
+    console.log("reset")
+    count = 0
+    counterElement.innerHTML = count
 }

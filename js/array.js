@@ -22,3 +22,10 @@ console.log(drinks)
 console.log("--- unshift() ---")
 drinks.unshift("アイスコーヒー")
 console.log(drinks)
+
+console.log("--- splice() ---")
+drinks.splice(1, 0, "オレンジジュース")
+console.log(drinks)
+
+drinks.splice(2, 1)
+console.log(drinks)

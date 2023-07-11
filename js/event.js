@@ -9,6 +9,15 @@ function inputUserName() {
 
 function order() {
     console.log("Order!!!")
+    var itemName = itemNameElement.innerText
+    var price = priceElement.innerText
+    var quantity = quantityElement.value
+
+    var totalPrice = price * quantity
+    var message = itemName + "を" + quantity + "つでよいですか？"
+    message += totalPrice + "円です。"
+
+    messageElement.innerText = message
 }
 
 var userNameElement = document.getElementById('user_name')

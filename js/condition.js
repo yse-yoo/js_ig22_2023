@@ -2,7 +2,9 @@ var message = ""
 var price = 200
 var money = 500
 
-if (money >= price) {
+if (price <= 0) {
+    message = "価格が正しくありません"
+} else if (money >= price) {
     message = "購入できます"
 } else {
     message = "お金がたりません"

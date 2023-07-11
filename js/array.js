@@ -6,3 +6,7 @@ console.log(selectDrink)
 
 var count = drinks.length
 console.log(count)
+
+console.log("--- push() ---")
+drinks.push("オレンジジュース")
+console.log(drinks)

@@ -14,3 +14,11 @@ console.log(drinks)
 console.log("--- pop() ---")
 drinks.pop()
 console.log(drinks)
+
+console.log("--- shift() ---")
+drinks.shift()
+console.log(drinks)
+
+console.log("--- unshift() ---")
+drinks.unshift("アイスコーヒー")
+console.log(drinks)

@@ -13,6 +13,7 @@ console.log(message)
 
 // Date
 var date = new Date()
+
 var year = date.getFullYear()
 var month = date.getMonth() + 1
 var day = date.getDate()
@@ -24,10 +25,10 @@ var dateString = year + "/" + month + "/" + day
 document.getElementById("today").innerHTML = dateString
 
 // week of day
+// Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
 var weekIndex = date.getDay()
 document.getElementById("week_index").innerHTML = weekIndex
 
-// Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
 var weekOfDays = ["日", "月", "火", "水", "木", "金", "土"]
 var weekday = weekOfDays[weekIndex]
 var garbade = ""

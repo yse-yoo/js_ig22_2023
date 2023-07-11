@@ -27,10 +27,11 @@ document.getElementById("today").innerHTML = dateString
 var weekIndex = date.getDay()
 document.getElementById("week_index").innerHTML = weekIndex
 
-var weekday = "月"
+// Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
+var weekOfDays = ["月", "火", "水", "木", "金", "土"]
+var weekday = weekOfDays[weekIndex]
 var garbade = ""
 
-// Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
 switch (weekIndex) {
     case 1:
     case 5:
@@ -43,5 +44,5 @@ switch (weekIndex) {
         garbade = "なし"
         break;
 }
-// document.getElementById("weekday").innerHTML = weekday
+document.getElementById("weekday").innerHTML = weekday
 document.getElementById("gabage").innerHTML = garbade

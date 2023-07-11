@@ -31,19 +31,19 @@ document.getElementById("week_index").innerHTML = weekIndex
 
 var weekOfDays = ["日", "月", "火", "水", "木", "金", "土"]
 var weekday = weekOfDays[weekIndex]
-var garbade = ""
+var garbage = ""
 
 switch (weekIndex) {
     case 1:
     case 5:
-        garbade = "もえるごみ"
+        garbage = "もえるごみ"
         break;
     case 3:
-        garbade = "もえないごみ"
+        garbage = "もえないごみ"
         break;
     default:
-        garbade = "なし"
+        garbage = "なし"
         break;
 }
 document.getElementById("weekday").innerHTML = weekday
-document.getElementById("gabage").innerHTML = garbade
+document.getElementById("gabage").innerHTML = garbage

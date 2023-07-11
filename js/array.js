@@ -29,3 +29,7 @@ console.log(drinks)
 
 drinks.splice(2, 1)
 console.log(drinks)
+
+console.log("--- データの更新 ---")
+drinks[2] = "ウーロン茶"
+console.log(drinks)

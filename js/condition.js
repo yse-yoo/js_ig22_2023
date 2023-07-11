@@ -23,19 +23,25 @@ var seconds = date.getSeconds()
 var dateString = year + "/" + month + "/" + day
 document.getElementById("today").innerHTML = dateString
 
+// week of day
+var weekIndex = date.getDay()
+document.getElementById("week_index").innerHTML = weekIndex
+
 var weekday = "月"
 var garbade = ""
 
-switch (weekday) {
-    case "月":
-    case "金":
+// Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
+switch (weekIndex) {
+    case 1:
+    case 5:
         garbade = "もえるごみ"
         break;
-    case "水":
+    case 3:
         garbade = "もえないごみ"
         break;
     default:
+        garbade = "なし"
         break;
 }
-document.getElementById("weekday").innerHTML = weekday
+// document.getElementById("weekday").innerHTML = weekday
 document.getElementById("gabage").innerHTML = garbade

@@ -10,3 +10,20 @@ if (price <= 0) {
     message = "お金がたりません"
 }
 console.log(message)
+
+var weekday = "月"
+var garbade = ""
+
+switch (weekday) {
+    case "月":
+    case "金":
+        garbade = "もえるごみ"
+        break;
+    case "水":
+        garbade = "もえないごみ"
+        break;
+    default:
+        break;
+}
+document.getElementById("weekday").innerHTML = weekday
+document.getElementById("gabage").innerHTML = garbade

@@ -57,4 +57,10 @@ console.log(users[1].name)
 // repeat
 for (const user of users) {
    console.log(user) 
+   var tr = document.createElement("tr")
+
+   var id = document.createElement("td")
+   var name = document.createElement("td")
+   var email = document.createElement("td")
+
 }

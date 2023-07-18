@@ -32,7 +32,7 @@ function createMonster(name, imageName) {
     //モンスターの名前
     p.innerHTML = name
     //モンスターの画像
-    img.src = "../images/" + imageName
+    img.src = "images/" + imageName
     //divに追加
     div.appendChild(p)
     div.appendChild(img)

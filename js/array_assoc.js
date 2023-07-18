@@ -14,3 +14,6 @@ console.log(character.level)
 
 character.exp = 5
 console.log(character.exp)
+
+character.weapon = "Bronz Knife"
+console.log(character)

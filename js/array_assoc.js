@@ -17,3 +17,39 @@ console.log(character.exp)
 
 character.weapon = "Bronz Knife"
 console.log(character)
+
+// Array Multi
+var rows = [
+    [90, 78, 82,],
+    [62, 70, 68,],
+    [68, 88, 72,],
+]
+console.log(rows)
+
+console.log(rows[1][1])
+console.log(rows[2][2])
+
+console.log(rows[0])
+console.log(rows[1])
+console.log(rows[2])
+
+//User List
+var users = [
+    {
+        id: 1,
+        name: "user1",
+        email: "user1@test.com",
+    },
+    {
+        id: 2,
+        name: "user2",
+        email: "user2@test.com",
+    },
+    {
+        id: 3,
+        name: "user3",
+        email: "user3@test.com",
+    },
+]
+console.log(users)
+console.log(users[1].name)

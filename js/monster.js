@@ -40,3 +40,7 @@ function createMonster(name, imageName) {
     //monsterListに追加
     monsterList.appendChild(div)
 }
+
+createMonster("モンスター1", "monster_006.png")
+createMonster("モンスター2", "monster_022.png")
+createMonster("モンスター3", "monster_040.png")

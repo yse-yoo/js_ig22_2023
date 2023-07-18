@@ -13,3 +13,10 @@ stage.appendChild(monsterElement2)
 
 //stageから、monsterElement1を削除（さくじょ）
 stage.removeChild(monsterElement1)
+
+//aタグ作成
+var a = document.createElement("a")
+a.href = "https://www.google.com/search?q=" + monsterElement1.innerHTML
+a.target = "_blank"
+a.innerHTML = monsterElement1.innerHTML
+stage.appendChild(a)

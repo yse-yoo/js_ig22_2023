@@ -56,11 +56,20 @@ console.log(users[1].name)
 
 // repeat
 for (const user of users) {
-   console.log(user) 
-   var tr = document.createElement("tr")
+    console.log(user)
+    var tr = document.createElement("tr")
 
-   var id = document.createElement("td")
-   var name = document.createElement("td")
-   var email = document.createElement("td")
+    var idElement = document.createElement("td")
+    var nameElement = document.createElement("td")
+    var emailElement = document.createElement("td")
 
+    idElement.innerHTML = user.id
+    nameElement.innerHTML = user.name
+    emailElement.innerHTML = user.email
+
+    tr.appendChild(idElement)
+    tr.appendChild(nameElement)
+    tr.appendChild(emailElement)
+
+    document.getElementById("users").appendChild(tr)
 }

@@ -53,3 +53,8 @@ var users = [
 ]
 console.log(users)
 console.log(users[1].name)
+
+// repeat
+for (const user of users) {
+   console.log(user) 
+}

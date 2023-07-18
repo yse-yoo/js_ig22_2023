@@ -83,3 +83,16 @@ for (const user of users) {
 
     document.getElementById("users").appendChild(tr)
 }
+
+// while
+var money = 1000000
+var target = 2000000
+var interestRate = 0.01
+var year = 0
+
+while (money < target) {
+    money *= (1 + interestRate)
+    year++
+}
+console.log(year)
+console.log(money)

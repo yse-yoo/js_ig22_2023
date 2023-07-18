@@ -36,6 +36,9 @@ function createMonster(name, imageName) {
     //divに追加
     div.appendChild(p)
     div.appendChild(img)
+    // div.setAttribute("class", "col-4")
+    // div.className = "col-4"
+    div.classList = ["col-4"]
 
     //monsterListに追加
     monsterList.appendChild(div)

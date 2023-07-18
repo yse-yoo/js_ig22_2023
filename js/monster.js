@@ -20,3 +20,12 @@ a.href = "https://www.google.com/search?q=" + monsterElement1.innerHTML
 a.target = "_blank"
 a.innerHTML = monsterElement1.innerHTML
 stage.appendChild(a)
+
+//monster-list
+var monsterList = document.getElementById("monster-list")
+
+function createMonster(name, imageName) {
+    var div = document.createElement("div")
+    var p = document.createElement("p")
+    var img = document.createElement("img")
+}

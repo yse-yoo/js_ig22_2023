@@ -28,4 +28,15 @@ function createMonster(name, imageName) {
     var div = document.createElement("div")
     var p = document.createElement("p")
     var img = document.createElement("img")
+
+    //モンスターの名前
+    p.innerHTML = name
+    //モンスターの画像
+    img.src = "../images/" + imageName
+    //divに追加
+    div.appendChild(p)
+    div.appendChild(img)
+
+    //monsterListに追加
+    monsterList.appendChild(div)
 }

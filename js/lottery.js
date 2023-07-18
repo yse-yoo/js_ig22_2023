@@ -5,3 +5,5 @@ var rarities = [
     { type: "SSR", name: "Super Special Rare", probability: 3 },
     { type: "LR", name: "Legend", probability: 1 },
 ]
+
+console.log(rarities)

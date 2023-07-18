@@ -6,3 +6,7 @@ var monsterElement1 = document.createElement("p")
 monsterElement1.innerHTML = "ゴースト"
 // parent elment(stage)に child element(monsterElement1)を追加
 stage.appendChild(monsterElement1)
+
+var monsterElement2 = document.createElement("p")
+monsterElement2.innerHTML = "キメラ"
+stage.appendChild(monsterElement2)

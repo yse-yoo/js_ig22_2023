@@ -9,3 +9,8 @@ var character = {
 }
 
 console.log(character)
+console.log(character.name)
+console.log(character.level)
+
+character.exp = 5
+console.log(character.exp)

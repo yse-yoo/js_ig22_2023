@@ -65,6 +65,7 @@ const items = [
 ] 
 
 //forEach
+console.log("--- forEach() ---")
 items.forEach(item => {
     //リテラル式
     //バッククォート（back quote）： Shift + @ 
@@ -73,6 +74,7 @@ items.forEach(item => {
 });
 
 //map
+console.log("--- map() ---")
 var newItems = items.map(function(item) {
     //結果を返す
     return {
@@ -82,4 +84,9 @@ var newItems = items.map(function(item) {
         withoutTaxPrice: Math.floor(item.price / 1.1),
     }
 })
+console.log(newItems)
+
+//filter
+console.log("--- filter() ---")
+var newItems = items.filter(item => item.price > 300)
 console.log(newItems)

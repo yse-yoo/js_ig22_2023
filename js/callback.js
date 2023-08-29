@@ -63,3 +63,12 @@ const items = [
     { id: 2, name: "紅茶", price: 350},
     { id: 3, name: "ほうじ茶", price: 300},
 ] 
+
+//forEach
+items.forEach(item => {
+    //リテラル式
+    //バッククォート（back quote）： Shift + @ 
+    const message = `${item.name}の価格は${item.price}円です`
+    console.log(message)
+});
+

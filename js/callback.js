@@ -39,6 +39,12 @@ processArray(numbers, calculate)
 
 const drinks = ["コーヒー", "紅茶", "ほうじ茶"]
 // forEach
+// arrow function
 drinks.forEach(drink => {
+    console.log(drink)
+});
+
+// anonymous function
+drinks.forEach(function(drink) {
     console.log(drink)
 });

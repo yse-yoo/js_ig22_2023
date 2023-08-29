@@ -12,3 +12,15 @@ processArray(numbers, function (number) {
     const answer = number * 2
     console.log(answer)
 })
+
+processArray(numbers, function (number) {
+    //計算
+    const answer = (number + 5) * 0.5
+    console.log(answer)
+})
+
+processArray(numbers, function (number) {
+    //計算
+    const answer = (number - 5) * 0.1
+    console.log(answer)
+})

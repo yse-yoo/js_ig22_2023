@@ -13,7 +13,7 @@ const person = {
 // キーまたはインデックスでリピート
 for (const key in person) {
     //もしキーがあれば
-    if (Object.hasOwnProperty.call(person, key)) {
+    if (person.hasOwnProperty(key)) {
         const value = person[key];
         const result = key + " = " + value
         console.log(result)

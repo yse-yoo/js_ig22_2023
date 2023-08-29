@@ -34,3 +34,9 @@ for (const key in drinks) {
     const drink = drinks[key];
     console.log(drink) 
 }
+
+//for-of
+console.log("--- for-of ---")
+for (const drink of drinks) {
+    console.log(drink) 
+}

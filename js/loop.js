@@ -32,7 +32,7 @@ for (var index = 0; index < drinks.length; index++) {
 console.log("--- for-in ---")
 for (const key in drinks) {
     const drink = drinks[key];
-    console.log(drink) 
+    console.log(key, drink) 
 }
 
 //for-of

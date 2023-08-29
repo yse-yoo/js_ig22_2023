@@ -35,3 +35,10 @@ function calculate(number) {
 }
 
 processArray(numbers, calculate)
+
+
+const drinks = ["コーヒー", "紅茶", "ほうじ茶"]
+// forEach
+drinks.forEach(drink => {
+    console.log(drink)
+});

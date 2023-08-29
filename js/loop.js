@@ -19,3 +19,10 @@ for (const key in person) {
         console.log(result)
     }
 }
+
+const drinks = ["コーヒー", "紅茶", "ほうじ茶"]
+//for-i
+for (var index = 0; index < drinks.length; index++) {
+    const drink = drinks[index];
+    console.log(drink) 
+}

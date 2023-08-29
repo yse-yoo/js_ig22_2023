@@ -72,3 +72,14 @@ items.forEach(item => {
     console.log(message)
 });
 
+//map
+var newItems = items.map(function(item) {
+    //結果を返す
+    return {
+        id: item.id,
+        name: item.name,
+        price: item.price,
+        withoutTaxPrice: Math.floor(item.price / 1.1),
+    }
+})
+console.log(newItems)

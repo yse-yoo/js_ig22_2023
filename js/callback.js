@@ -57,3 +57,9 @@ function showDrink(drink) {
     console.log(drink)
 }
 drinks.forEach(showDrink)
+
+const items = [
+    { id: 1, name: "コーヒー", price: 300},
+    { id: 2, name: "紅茶", price: 350},
+    { id: 3, name: "ほうじ茶", price: 300},
+] 

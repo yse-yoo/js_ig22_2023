@@ -10,3 +10,12 @@ const person = {
     occupation: "Enginner",
 }
 // for-in
+// キーまたはインデックスでリピート
+for (const key in person) {
+    //もしキーがあれば
+    if (Object.hasOwnProperty.call(person, key)) {
+        const value = person[key];
+        const result = key + " = " + value
+        console.log(result)
+    }
+}

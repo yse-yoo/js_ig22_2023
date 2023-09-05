@@ -1,7 +1,9 @@
 console.log(this)
 
 const messageElement = document.getElementById('message')
+
 this.name = "Bob"
+console.log(this)
 
 function sayFunction(element) {
     console.log(element)
@@ -26,7 +28,9 @@ function sayArrow(element) {
     person.sayHello2()
 }
 
+//コンストラクタみたいなもの
 function Person(name) {
+    console.log(this.name)
     this.name = name
     messageElement.innerHTML = this.name
 }

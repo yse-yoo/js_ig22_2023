@@ -32,6 +32,7 @@ function sayArrow(element) {
 function Person(name) {
     console.log(this.name)
     this.name = name
+    console.log(this.name)
     messageElement.innerHTML = this.name
 }
 

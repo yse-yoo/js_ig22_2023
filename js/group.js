@@ -20,3 +20,6 @@ console.log("--- forEach ---")
 Array.from(cities).forEach(city => {
    console.log(city.innerHTML) 
 });
+
+var menus = document.getElementsByClassName("menus")
+console.log(menus)

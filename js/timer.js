@@ -9,6 +9,9 @@ counterElement.innerText = count
 function start() {
     console.log("Start!!!")
     clearInterval(timer)
+
+    // setInterval(xxxx)
+    // xxxx: callback function
     timer = setInterval(() => {
         count++
         counterElement.innerHTML = count

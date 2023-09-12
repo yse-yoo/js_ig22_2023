@@ -23,3 +23,13 @@ Array.from(cities).forEach(city => {
 
 var menus = document.getElementsByClassName("menus")
 console.log(menus)
+
+for (const menu of menus) {
+    //ul をしゅとく
+    console.log(menu)
+    // ul のこども
+    console.log(menu.children)
+    for (const item of menu.children) {
+        console.log(item.innerHTML)
+    }
+}

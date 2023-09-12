@@ -1,5 +1,6 @@
 
 var cities = document.getElementsByClassName("city")
+//HTML Collection
 console.log(cities)
 
 console.log("--- for of ---")

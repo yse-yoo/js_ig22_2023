@@ -6,5 +6,12 @@ function auth() {
     console.log(email)
     console.log(password)
 
-    return false;
+    if (email == "" || password == "") {
+        //サーバにデータは送信しない
+        return false;
+    } else {
+        //サーバにデータを送信する
+        return true;
+    }
+
 }

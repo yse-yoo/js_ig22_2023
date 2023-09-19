@@ -27,7 +27,7 @@ console.log(menus)
 for (const menu of menus) {
     //ul をしゅとく
     console.log(menu)
-    // ul のこども
+    // ul のこども(li)
     console.log(menu.children)
     for (const item of menu.children) {
         console.log(item.innerHTML)

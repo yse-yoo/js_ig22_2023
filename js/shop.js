@@ -35,3 +35,14 @@ removeBtn.addEventListener('click', function() {
     countBtn.removeEventListener('click', countHandler)
     document.getElementById('count').innerHTML = "Remove"
 })
+
+// マウスイベント
+const mouseArea = document.getElementById('mouse-area')
+
+mouseArea.addEventListener('mouseover', function() {
+    this.innerHTML = "マウスオーバー"
+})
+
+mouseArea.addEventListener('mouseout', function() {
+    this.innerHTML = "マウスアウト"
+})

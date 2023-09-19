@@ -41,3 +41,11 @@ console.log(h2)
 
 var h2 = document.querySelectorAll('h2')
 console.log(h2)
+
+console.log('--- .city ---')
+var cities = document.querySelectorAll('.city')
+console.log(cities)
+
+for (const city of cities) {
+   console.log(city.innerHTML) 
+}

@@ -38,11 +38,14 @@ removeBtn.addEventListener('click', function() {
 
 // マウスイベント
 const mouseArea = document.getElementById('mouse-area')
-
 mouseArea.addEventListener('mouseover', function() {
     this.innerHTML = "マウスオーバー"
 })
-
 mouseArea.addEventListener('mouseout', function() {
     this.innerHTML = "マウスアウト"
+})
+
+const mouseMoveArea = document.getElementById('mouse-move-area')
+mouseMoveArea.addEventListener('mousemove', function(event) {
+    console.log(event.pageX, event.pageY)
 })

@@ -7,6 +7,9 @@ calculateBtn.addEventListener('click', function(event) {
     var quantity = document.getElementById('quantity').value
     console.log(price, quantity)
 
+    var totalPrice = price * quantity
+
+    document.getElementById('result').innerHTML = totalPrice
     //処理を止める
     event.preventDefault()
 })

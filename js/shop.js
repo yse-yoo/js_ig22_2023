@@ -16,3 +16,15 @@ calculateBtn.addEventListener('click', function(event) {
     //処理を止める
     event.preventDefault()
 })
+
+// clickイベント追加
+const countBtn = document.getElementById('count-btn')
+const removeBtn = document.getElementById('remove-btn')
+
+var count = 0
+//ハンドラー（イベントが発生した時の処理）
+const countHandler = function() {
+    count++
+    document.getElementById('count').innerHTML = count
+}
+countBtn.addEventListener('click', countHandler)

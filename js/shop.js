@@ -7,9 +7,12 @@ calculateBtn.addEventListener('click', function(event) {
     var quantity = document.getElementById('quantity').value
     console.log(price, quantity)
 
-    var totalPrice = price * quantity
-
-    document.getElementById('result').innerHTML = totalPrice
+    var message = "入力が間違っています"
+    if (!isNaN(price) && !isNaN(quantity)) {
+        var totalPrice = price * quantity
+        message = totalPrice + "円"
+    }
+    document.getElementById('result').innerHTML = message
     //処理を止める
     event.preventDefault()
 })

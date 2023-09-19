@@ -49,3 +49,10 @@ const mouseMoveArea = document.getElementById('mouse-move-area')
 mouseMoveArea.addEventListener('mousemove', function(event) {
     console.log(event.pageX, event.pageY)
 })
+
+//キーイベント
+const keyHandler = function(event) {
+    console.log(event.keyCode)
+    document.getElementById('key-code-area').innerHTML = event.keyCode
+}
+document.addEventListener('keydown', keyHandler)

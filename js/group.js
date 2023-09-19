@@ -33,3 +33,11 @@ for (const menu of menus) {
         console.log(item.innerHTML)
     }
 }
+
+// querySelector()
+console.log('--- querySelector ---')
+var h2 = document.querySelector('h2')
+console.log(h2)
+
+var h2 = document.querySelectorAll('h2')
+console.log(h2)

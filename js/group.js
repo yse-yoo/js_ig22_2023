@@ -49,3 +49,11 @@ console.log(cities)
 for (const city of cities) {
    console.log(city.innerHTML) 
 }
+
+console.log('--- ul.menus > li ---')
+var items = document.querySelectorAll('ul.menus > li')
+console.log(items)
+
+for (const item of items) {
+   console.log(item.innerHTML) 
+}

@@ -7,6 +7,8 @@ function auth() {
     console.log(password)
 
     if (email == "" || password == "") {
+        document.getElementById('error-message')
+                .innerHTML = "Emailまたはパスワードを入力してください"
         //サーバにデータは送信しない
         return false;
     } else {

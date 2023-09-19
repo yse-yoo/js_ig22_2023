@@ -27,4 +27,11 @@ const countHandler = function() {
     count++
     document.getElementById('count').innerHTML = count
 }
+// Count ボタンがクリックされたら
 countBtn.addEventListener('click', countHandler)
+
+// Remove ボタンがクリックされたら
+removeBtn.addEventListener('click', function() {
+    countBtn.removeEventListener('click', countHandler)
+    document.getElementById('count').innerHTML = "Remove"
+})

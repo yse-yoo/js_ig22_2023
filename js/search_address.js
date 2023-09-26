@@ -6,7 +6,6 @@ function getApiURL() {
 }
 
 const API_URL = getApiURL() + 'data/prefectures.json'
-const SEARCH_URI = "https://zipcloud.ibsnet.co.jp/api/search";
 
 // 非同期処理で、都道府県API読み込み
 const loadPrefectures = async () => {
@@ -26,6 +25,14 @@ const createPrefectures = (prefectures) => {
         option.innerHTML = prefecture.name
         document.getElementById('prefecture').appendChild(option)
     });
+}
+
+const SEARCH_URI = "https://zipcloud.ibsnet.co.jp/api/search";
+const searchAPI = async (zipcode) => {
+    if (!zipcode) return;
+    const query_param = new URLSearchParams({ zipcode: zipcode, })
+    const uri = SEARCH_URI + "?" + query_param;
+    console.log(uri);
 }
 
 // 都道府県読み込み処理

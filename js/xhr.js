@@ -21,6 +21,14 @@ xhr.open("GET", API_URL, true)
 xhr.onload = function () {
     const json = xhr.responseText
     console.log(json)
+
+    // JSON -> Array & Object
+    const persons = JSON.parse(json)
+    console.log(persons)
+
+    for (const person of persons) {
+       console.log(person.name) 
+    }
 }
 
 // 実行

@@ -10,3 +10,7 @@ console.log(person)
 // Object -> JSON
 const jsonString = JSON.stringify(person)
 console.log(jsonString)
+
+// JSON -> Object
+person = JSON.parse(jsonString)
+console.log(person)

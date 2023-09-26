@@ -33,6 +33,10 @@ const searchAPI = async (zipcode) => {
     const query_param = new URLSearchParams({ zipcode: zipcode, })
     const uri = SEARCH_URI + "?" + query_param;
     console.log(uri);
+    // APIからデータ取得
+    const response = await fetch(uri)
+    const data = await response.json()
+    console.log(data)
 }
 
 const searchHandler = async () => {

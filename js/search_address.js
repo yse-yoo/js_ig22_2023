@@ -15,6 +15,17 @@ const loadPrefectures = async () => {
     // レスポンス）（JSONデータ）を、オブジェクトに変換
     const prefectures = await response.json()
     console.log(prefectures)
+    createPrefectures(prefectures)
+}
+
+// 都道府県プルダウン作成
+const createPrefectures = (prefectures) => {
+    prefectures.forEach(prefecture => {
+        var option = document.createElement('option')
+        option.value = prefecture.code
+        option.innerHTML = prefecture.name
+        document.getElementById('prefecture').appendChild(option)
+    });
 }
 
 // 都道府県読み込み処理

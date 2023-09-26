@@ -8,5 +8,20 @@ function getApiURL() {
     return baseURL
 }
 
-const API_URL = getApiURL() + 'data/persons.json';
+const API_URL = getApiURL() + 'data/persons.json'
 console.log(API_URL)
+
+// XMLHttpRequestのインスタンス
+const xhr = new XMLHttpRequest()
+
+// 指定したURLでGETリクエストし、非同期処理で設定
+xhr.open("GET", API_URL, true)
+
+// サーバから結果が返ってきたとき（コールバック関数）
+xhr.onload = function () {
+    const json = xhr.responseText
+    console.log(json)
+}
+
+// 実行
+xhr.send()

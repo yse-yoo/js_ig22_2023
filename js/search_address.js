@@ -6,7 +6,7 @@ function getApiURL() {
 }
 
 const API_URL = getApiURL() + 'data/prefectures.json'
-console.log(API_URL)
+const SEARCH_URI = "https://zipcloud.ibsnet.co.jp/api/search";
 
 // 非同期処理で、都道府県API読み込み
 const loadPrefectures = async () => {

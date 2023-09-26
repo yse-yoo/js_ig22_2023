@@ -35,5 +35,11 @@ const searchAPI = async (zipcode) => {
     console.log(uri);
 }
 
+const searchHandler = async () => {
+    const zipcode = document.getElementById('zipcode').value;
+    var data = await searchAPI(zipcode);
+}
+
 // 都道府県読み込み処理
 loadPrefectures()
+

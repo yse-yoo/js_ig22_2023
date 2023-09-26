@@ -19,15 +19,20 @@ xhr.open("GET", API_URL, true)
 
 // サーバから結果が返ってきたとき（コールバック関数）
 xhr.onload = function () {
-    const json = xhr.responseText
-    console.log(json)
+    // 200 : success
+    if (xhr.status === 200) {
+        const json = xhr.responseText
+        console.log(json)
 
-    // JSON -> Array & Object
-    const persons = JSON.parse(json)
-    console.log(persons)
+        // JSON -> Array & Object
+        const persons = JSON.parse(json)
+        console.log(persons)
 
-    for (const person of persons) {
-       console.log(person.name) 
+        for (const person of persons) {
+            console.log(person.name)
+        }
+    } else {
+        console.log('Error')
     }
 }
 
